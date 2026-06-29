@@ -1,7 +1,1 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-const btn = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-btn?.addEventListener('click', () => nav.classList.toggle('open'));
-document.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+const header=document.querySelector('[data-header]');const toggle=document.querySelector('[data-menu-toggle]');const nav=document.querySelector('[data-nav]');const year=document.querySelector('[data-year]');if(year)year.textContent=new Date().getFullYear();toggle?.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('.main-nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>50)});const io=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');io.unobserve(entry.target)}})},{threshold:.15});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
