@@ -1,3 +1,1 @@
-# Burr's Painting LLC Website
-
-Multi-page static website for Burr's Painting LLC. Upload all files/folders in this directory to the root of the GitHub repository.
+Burr's Painting LLC multi-page website. Includes SBE trust-bar update and capability statement PDF opening in a new browser tab.
