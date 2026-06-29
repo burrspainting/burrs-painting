@@ -1,11 +1,15 @@
 # Burr's Painting LLC Website
 
-Production static website for Burr's Painting LLC.
+Production static website for burrspainting.com.
 
-Upload these files directly to the root of the `burrspainting/burrs-painting` GitHub repository.
+## Upload instructions
+Upload these files directly to the root of the `burrspainting/burrs-painting` repository:
 
-GitHub Pages should be set to:
-- Source: Deploy from branch
-- Branch: main
-- Folder: / (root)
-- Custom domain: burrspainting.com
+- index.html
+- style.css
+- script.js
+- CNAME
+- assets/
+- README.md
+
+Then commit changes. GitHub Pages will publish automatically.
