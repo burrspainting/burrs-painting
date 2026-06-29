@@ -1,15 +1,20 @@
 # Burr's Painting LLC Website
 
-Static website for Burr's Painting LLC.
+Production static website for Burr's Painting LLC.
 
-## GitHub Pages setup
-1. Upload these files to the `burrspainting/burrs-painting` repository.
-2. In GitHub, go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/root**.
-5. Save.
+## GitHub Pages
+Upload these files directly to the root of the `burrspainting/burrs-painting` repository:
 
-The first test URL should be:
-`https://burrspainting.github.io/burrs-painting/`
+- `index.html`
+- `style.css`
+- `script.js`
+- `assets/`
+- `README.md`
 
-After it works, connect the custom domain `burrspainting.com`.
+Then go to **Settings → Pages** and confirm:
+
+- Source: Deploy from a branch
+- Branch: main
+- Folder: /(root)
+
+Custom domain can be connected after the GitHub Pages test URL is working.
