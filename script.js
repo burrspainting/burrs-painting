@@ -1,1 +1,4 @@
-const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('#nav');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}))}const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const header = document.querySelector('.site-header');
+const toggle = document.querySelector('.nav-toggle');
+if (toggle) toggle.addEventListener('click', () => header.classList.toggle('open'));
+document.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', () => header.classList.remove('open')));
